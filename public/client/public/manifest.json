@@ -1,0 +1,25 @@
+{
+  "short_name": "Quick Store",
+  "name": "Quick store app",
+  "icons": [
+    {
+      "src": "./logo.png",
+      "sizes": "136x102",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "136x102"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "136x102"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FF0053",
+  "background_color": "#EEEEEE"
+}

@@ -1,0 +1,21 @@
+.button{
+    &-wrapper{
+        font-size: 3rem;
+        background-color: $primaryColor;
+        color: #fff;
+        text-transform: uppercase;
+        @include flexer-horizontal-center();
+        padding: 1.5rem 0;
+        margin: 1rem 0;
+        font-family: 'Bebas Neue', cursive;
+        cursor: pointer;
+        border: 5px solid $primaryColor;
+        transition: all 0.25s ease-in;
+        outline: none;
+        &:hover{
+            color: $primaryColor;
+            background-color: #fff;
+            border: 5px solid $primaryColor;
+        }
+    }
+}

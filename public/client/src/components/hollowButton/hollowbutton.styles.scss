@@ -1,0 +1,22 @@
+.hollowbutton{
+    &-wrapper{
+        color: $primaryColor;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: 'Righteous', cursive;
+        border: 5px solid;
+        text-align: center;
+        margin: 5rem auto;
+        padding: 2rem 3rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        display: block;
+        background-color: transparent;
+        outline: none;
+        &:hover{
+            color: #fff;
+            background-color: $primaryColor;
+            border: 5px solid $primaryColor;
+        }
+    }
+}

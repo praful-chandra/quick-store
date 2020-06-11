@@ -1,0 +1,5 @@
+.mainpage{
+    &-wrapper{
+        @include flexer-vertical-center();
+    }
+}

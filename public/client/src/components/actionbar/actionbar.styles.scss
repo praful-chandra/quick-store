@@ -1,0 +1,60 @@
+.actionbar{
+    &-wrapper{
+        
+    }
+
+    &-head{
+        background-color: $tabBackground;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 3px 6px $boxShadow;
+        @include flexer-horizontal-spaceEvenly();
+        display: inline-block;
+        font-size: 2.5rem;
+        font-family: 'Cabin Condensed', sans-serif;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        outline: none;
+
+    }
+
+    &-sub{
+        text-transform: capitalize;
+        margin: 0 4rem;
+        cursor: pointer;
+        padding-bottom: 1rem;
+        font-size: 2.5rem;
+        font-family: 'Cabin Condensed', sans-serif;
+        font-weight: 700;
+        background-color: transparent;
+        outline: none;
+        &:hover{
+            border-bottom: 3px solid $primaryColor;
+            animation: hoverBorder 2s ease-in;
+            animation-iteration-count:infinite;
+        }
+
+        &-selected{
+            border-bottom: 3px solid $primaryColor;
+        }
+    }
+}
+
+@keyframes hoverBorder{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.7;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+    }
+}

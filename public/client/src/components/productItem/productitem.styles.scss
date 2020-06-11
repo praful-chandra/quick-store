@@ -1,0 +1,56 @@
+.productitem {
+  &-wrapper {
+    width: 29rem;
+    height: 29rem;
+    box-shadow: 0 3px 6px $boxShadow;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &-add{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 100%;
+    color: $primaryColor;
+    font-size: 3rem;
+    cursor: pointer;
+    @include flexer-vertical-center();
+  }
+
+  &-image {
+    width: 100%;
+    height: 75%;
+  }
+  &-details {
+    width: 100%;
+    height: 25%;
+    @include flexer-vertical-start-spaceEvenly();
+    font-family: "Cabin Condensed", sans-serif;
+    font-weight: 700;
+    padding-left: 1rem;
+    &-title {
+      font-size: 2rem;
+      color: $textColor;
+      text-transform: capitalize;
+    }
+    &-price {
+      font-size: 1.5rem;
+      color: $primaryColor;
+      text-transform: capitalize;
+      
+    }
+
+    &-discount{
+      font-size: 1.2rem;
+      color: $greyText;
+      text-decoration: line-through;
+      text-transform: capitalize;
+      margin-right: 1rem;
+      
+    }
+  }
+
+}
+

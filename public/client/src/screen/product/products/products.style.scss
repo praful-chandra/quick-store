@@ -1,0 +1,28 @@
+.products {
+  &-itemgrid {
+    width: 100%;
+    margin: 9rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+    grid-gap: 3rem;
+    justify-self: center;
+
+    
+  }
+}
+
+//*---------------------------------RESPONSIVE--------------------------------------
+
+@media only screen and (max-width: 610px) {
+  .products {
+    &-itemgrid {
+      width: 100%;
+      margin: 5rem 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+      grid-gap: 3rem;
+      justify-items: center;
+    }
+  }
+}
+
+//*---------------------------------RESPONSIVE--------------------------------------

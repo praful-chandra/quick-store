@@ -1,0 +1,80 @@
+.productdetail {
+  &-wrapper {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    justify-content: center;
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    @include flexer-horizontal-center();
+
+    & img {
+      width: 70%;
+      height: 85%;
+    }
+  }
+
+  &-info {
+    width: 100%;
+    height: 100%;
+    @include flexer-vertical-spaceEvenly();
+
+    &-title {
+      font-size: 5rem;
+      font-weight: 700;
+      color: $textColor;
+      font-family: "Cabin Condensed", sans-serif;
+      text-transform: capitalize;
+    }
+
+    &-description {
+      font-size: 3rem;
+      color: $greyText;
+      width: 90%;
+      margin: 0 auto;
+      font-family: "Cabin Condensed", sans-serif;
+    }
+
+    &-size {
+      width: 50%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+      font-size: 4rem;
+      color: $primaryColor;
+      font-family: "Bebas Neue", cursive;
+
+      &-item {
+        width: 6rem;
+        height: 6rem;
+        background-color: $backgroundColor;
+        @include flexer-horizontal-center();
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        &-selected {
+          color: #fff;
+          background-color: $primaryColor;
+        }
+      }
+    }
+
+    &-btn {
+      width: 100%;
+      @include flexer-horizontal-center();
+    }
+  }
+}
+
+//*--------------------------------------RESOPNSIVE------------------------------------------------
+
+@media only screen and (max-width: 1130px) {
+  .productdetail {
+    &-wrapper {
+      height: 60rem;
+    }
+  }
+}
+
+//*--------------------------------------RESOPNSIVE------------------------------------------------

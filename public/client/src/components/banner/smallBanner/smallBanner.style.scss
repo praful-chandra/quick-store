@@ -1,0 +1,20 @@
+.smallbanner{
+    &-wrapper{
+        height: 35rem;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 2rem auto;
+        position: relative;
+    }
+
+    &-content{
+        position: absolute;
+        bottom : 5rem;
+        left: 5rem;
+        font-size: 4rem;
+        text-transform: capitalize;
+        color: #fff;
+        font-family: 'Bebas Neue', cursive;
+    }
+}

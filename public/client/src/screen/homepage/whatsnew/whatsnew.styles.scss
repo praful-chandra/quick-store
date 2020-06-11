@@ -1,0 +1,14 @@
+.whatsnew {
+ 
+
+  &-bigitem {
+    &-wrapper {
+      margin: 2rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      grid-column-gap: 5rem;
+      justify-content: space-between;
+      align-content: center;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.itembar {
+  &-component {
+    width: 100%;
+    overflow: scroll;
+    height: 32rem;
+    margin: 2rem 0;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 5rem;
+    justify-content: center;
+    align-content: center;
+  }
+}

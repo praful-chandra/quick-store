@@ -1,0 +1,23 @@
+.App{
+   &-body{
+    padding-top: 10rem;
+    min-height: 90vh;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+   }
+}
+
+
+//*-----------------------------------RESPONSIVE----------------------------------------------------
+
+@media only screen and (max-width :1300px){
+   .App{
+      &-body{
+         padding: 2rem;
+         padding-top: 10rem;
+      }
+   }
+}
+
+//*-----------------------------------RESPONSIVE----------------------------------------------------

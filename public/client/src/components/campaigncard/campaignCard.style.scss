@@ -1,0 +1,32 @@
+.campaigncard{
+    &-wrapper{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        box-shadow: 10px 10px 5px $boxShadow;
+        border-radius: 15px;
+
+    }
+
+    &-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+
+    }
+
+    &-name{
+        width: 100%;
+        color: #fff;
+        background-color: $boxShadow;
+        position: absolute;
+        text-align: center;
+        font-size: 5rem;
+        text-transform: uppercase;
+        bottom: 3rem;
+        left: 0rem;
+        font-family: 'Bebas Neue', cursive;
+        text-shadow: 10px 10px 15px $textColor;
+    }
+}

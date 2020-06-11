@@ -1,0 +1,23 @@
+.subnavbar {
+  &-wrapper {
+    height: 7rem;
+    @include flexer-horizontal-center();
+    font-family: "Girassol", cursive;
+    font-size: 3rem;
+    color:$greyText;
+
+    & ul{
+        list-style: none;
+        @include flexer-horizontal-spaceEvenly();
+
+        & li{
+            margin: 0 3rem;
+        }
+    }
+  }
+
+  &-selected{
+    border-bottom: 3px solid $primaryColor;
+    color: #000;
+  }
+}

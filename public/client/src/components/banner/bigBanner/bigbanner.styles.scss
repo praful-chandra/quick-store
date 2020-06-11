@@ -1,0 +1,21 @@
+.bigbanner{
+    &-wrapper{
+        width: 100%;
+        height: 64rem;
+        margin: 2rem auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    &-content{
+        position: absolute;
+        bottom : 5rem;
+        left: 5rem;
+        font-size: 8rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: 'Bebas Neue', cursive;
+    }
+}

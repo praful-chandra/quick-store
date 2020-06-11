@@ -1,0 +1,44 @@
+//import globals
+@import "./colors.scss";
+@import "./fonts.scss";
+@import "./mixin.scss";
+@import "./global.scss";
+
+//system
+@import "../App.scss";
+
+//Responsive mediaqueries
+@import "./responsive.scss";
+
+//components
+@import "../components/navBar/navbar.styles.scss";
+@import "../components/subNavBar/subnavbar.styles.scss";
+@import "../components/banner/mainBanner/mainbanner.styles.scss";
+@import "../components/actionbar/actionbar.styles.scss";
+@import "../components/productItem/productitem.styles.scss";
+@import "../components/hollowButton/hollowbutton.styles.scss";
+@import "../components/banner/smallBanner/smallBanner.style.scss";
+@import "../components/itembar/itembar.styles.scss";
+@import "../components/bigitem/bigitem.styles.scss";
+@import "../components/banner/bigBanner/bigbanner.styles.scss";
+@import "../components/footer/footer.styles.scss";
+@import "../components/button/button.styles.scss";
+@import "../components/campaigncard/campaignCard.style.scss";
+@import "../components/banner/heroBanner/herobanner.style.scss";
+@import "../components/loading/loading.styles.scss";
+
+//subcomponents
+@import "../screen/homepage/homepage-content/homepage-content.styles.scss";
+@import "../components/category/category-popular/category-popular.styles.scss";
+
+//screens
+@import "../screen/homepage/homepage.styles.scss";
+@import "../screen/homepage/whatsnew/whatsnew.styles.scss";
+@import "../screen/homepage/mainPage/mainPage.style.scss";
+@import "../screen/homepage/categories/categories.style.scss";
+@import "../screen/homepage/campaign/campaign.style.scss";
+@import "../screen/product/productDetail/productDetail.style.scss";
+@import "../screen/product/products/products.style.scss";
+@import "../screen/search/search.style.scss";
+@import "../screen/cart/cart.style.scss";
+@import "../screen/checkout/checkout.style.scss";

@@ -1,0 +1,39 @@
+.campaign {
+  &-wrapper {
+    margin-bottom: 5rem;
+    width: 100%;
+    padding: 0 3rem;
+  }
+  &-grid {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    grid-gap: 3rem;
+    & > * {
+      height: 35rem;
+    }
+  }
+}
+
+
+//*-------------------------------RESPONSIVE-------------------------------------------
+
+@media only screen and (min-width:1580px){
+    .campaign-grid{
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    & > * {
+      height: 30rem;
+    }
+    }
+}
+@media only screen and (min-width:1815px){
+    .campaign-grid{
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    & > * {
+      height: 25rem;
+    }
+    }
+}
+
+//*-------------------------------RESPONSIVE-------------------------------------------

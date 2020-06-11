@@ -1,0 +1,203 @@
+.navbar {
+  &-wrapper {
+    height: 8rem;
+    width: 100%;
+    @include flexer-horizontal-spaceBetween();
+    padding: 0 2rem;
+    position: fixed;
+    background-color: #fff;
+    z-index: 9999;
+    // margin-bottom: 10rem;
+  }
+  &-logo {
+    width: 13rem;
+    height: 10rem;
+    margin-right: 15rem;
+  }
+
+  &-searchbar {
+    font-family: "Cabin Condensed", sans-serif;
+    width: 90rem;
+    height: 6rem;
+    background-color: $backgroundColor;
+    border-radius: 100px 0 0 100px;
+    padding: 2rem;
+    font-size: 2rem;
+    outline: none;
+    justify-items: center;
+
+    &-mobile {
+      font-family: "Cabin Condensed", sans-serif;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background-color: $backgroundColor;
+      height: 10rem;
+      padding: 2rem 2rem 2rem 8rem;
+      font-size: 3rem;
+      outline: none;
+      justify-items: center;
+      align-items: center;
+    }
+
+    &-btn {
+      font-size: 2rem;
+      background-color: $backgroundColor;
+      width: 5rem;
+      height: 6rem;
+      border-radius: 0 100px 100px 0;
+    }
+  }
+  &-user {
+    @include flexer-horizontal-spaceBetween();
+    font-size: 2rem;
+    & > div {
+      margin-left: 2rem;
+      cursor: pointer;
+    }
+    &-cart {
+      font-family: "Righteous", cursive;
+      background-color: transparent;
+      outline: none;
+      font-size: 2rem;
+      padding: 1rem;
+      border: 3px solid transparent;
+
+      transition: all 0.2s ease;
+      cursor: pointer;
+      & span {
+        margin-left: 1rem;
+      }
+
+      &-active {
+        background-color: $backgroundColor;
+        box-shadow: 0 0 20px $boxShadow inset;
+        border: 3px solid $backgroundColor;
+      }
+      &-count {
+        border: 3px solid;
+        padding: 0 0.5rem;
+      }
+      &-details {
+      font-family: "Righteous", cursive;
+        animation: cartEntry 0.3s ease-in;
+        width: 40rem;
+        height: 50rem;
+        border: 5px solid $primaryColor;
+        background-color: #fff;
+        position: absolute;
+        top: 8rem;
+        right: 1rem;
+        box-shadow: 0 0 10px $boxShadow;
+        @include flexer-vertical-spaceBetween();
+        cursor: default !important;
+        &-itemwrapper {
+          width: 90%;
+          height: 70%;
+          overflow-y: scroll;
+        }
+
+        &-item {
+          width: 100%;
+          height: 13rem;
+          border-bottom: 5px solid $backgroundColor;
+          @include flexer-horizontal-spaceBetween();
+          padding: 1rem 0;
+          &-image {
+            width: 20%;
+            height: 100%;
+          }
+
+          &-delete{
+            cursor: pointer;
+            transition: all 0.2s ease;
+            &:hover{
+              color: #ff0000;
+            }
+          }
+        }
+      }
+    }
+
+    &-name {
+      font-family: "Cabin Condensed", sans-serif;
+      color: #5e5c5c;
+      &-bold {
+        color: #000;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@keyframes cartEntry {
+  from {
+    // transform: translateY(-10rem);
+    opacity: 0;
+  }
+  to {
+    // transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+//* ------------------------------------ RESPONSIVE ----------------------------------------------------
+
+@media only screen and (max-width: 930px) {
+  .navbar-searchbar {
+    width: 60rem;
+  }
+}
+
+@media only screen and (min-width: 610px) {
+  .navbar-searchbar {
+    &-mobile {
+      display: none !important;
+    }
+    &-back {
+      display: none !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .navbar-searchbar {
+    display: none;
+    &-btn {
+      background-color: transparent;
+      &-mobile {
+        position: absolute;
+        right: 2rem;
+        top: 1rem;
+        font-size: 4rem;
+      }
+    }
+    &-back {
+      color: #000;
+      background-color: transparent;
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 3rem;
+      width: 5rem;
+      height: 6rem;
+      z-index: 100;
+    }
+  }
+  .navbar-wrapper {
+    height: 10rem;
+  }
+
+  .navbar-user-cart-details {
+    top: 10rem;
+    width: 80vw;
+    height: 90rem;
+  }
+
+  .navbar-user-cart-details-item {
+    height: 20rem;
+  }
+}
+
+//* ------------------------------------ RESPONSIVE ----------------------------------------------------

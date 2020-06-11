@@ -1,0 +1,45 @@
+.herobanner {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-image {
+    width: 80rem;
+    height: 60rem;
+    object-fit: cover;
+    transform: translateX(10rem);
+  }
+
+  &-title {
+    font-family: "Bebas Neue", cursive;
+    color: $greyText;
+    font-size: 15rem;
+    align-self: flex-end;
+    transform: translateX(-10rem);
+    text-shadow: 20px 10px 10px $boxShadow;
+  }
+}
+
+
+//*---------------------------------RESPONSIVE--------------------------------------
+
+@media only screen and (max-width: 610px) {
+.herobanner{
+  &-wrapper{
+    flex-direction: column;
+  }
+
+  &-image{
+    transform: translateX(0);
+    margin: 0 auto;
+  }
+  &-title{
+    margin: 0 auto;
+    text-align: center;
+    transform: translateX(0);
+  }
+}
+}
+
+//*---------------------------------RESPONSIVE--------------------------------------

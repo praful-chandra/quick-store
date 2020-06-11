@@ -1,0 +1,114 @@
+.footer {
+  &-wrapper {
+    width: 100%;
+    height: 35rem;
+    background-color: $backgroundColor;
+  }
+
+  &-top {
+    width: 100%;
+    height: 85%;
+
+    &-left {
+      height: 100%;
+      width: 30%;
+      float: left;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      & img {
+        width: 26rem;
+        height: 19rem;
+      }
+    }
+    &-right {
+      height: 100%;
+      width: 70%;
+      float: right;
+      @include flexer-horizontal-spaceEvenly();
+      &-column {
+        & ul {
+          list-style: none;
+        }
+
+        &-head {
+          color: $primaryColor;
+          font-size: 3.2rem;
+          text-transform: uppercase;
+          font-family: "Cabin Condensed", sans-serif;
+          font-weight: 700;
+        }
+
+        &-item {
+          color: $greyText;
+          font-size: 3rem;
+          text-transform: capitalize;
+          cursor: pointer;
+          font-family: "Cabin Condensed", sans-serif;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    width: 40%;
+    height: 15%;
+    margin: 0 auto;
+    @include flexer-horizontal-spaceEvenly();
+
+    &-item {
+      @include flexer-horizontal-spaceEvenly();
+      color: $greyText;
+      font-size: 2rem;
+      text-transform: capitalize;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: "Cabin Condensed", sans-serif;
+
+      & svg {
+        fill: $greyText;
+      }
+    }
+
+    &-item-dot {
+      width: 1rem;
+      height: 1rem;
+      margin: 0 0.5rem;
+      background-color: $greyText;
+      border-radius: 100%;
+    }
+  }
+}
+
+//*---------------------------------RESPONSIVE--------------------------------------
+
+@media only screen and (max-width: 610px) {
+  .footer {
+    &-wrapper {
+      height: auto;
+      padding-bottom: 3rem;
+    }
+    &-top {
+      &-left {
+          width: 100%;
+        float: none;
+        @include flexer-horizontal-center();
+      }
+
+      &-right {
+          width: 100%;
+        float: none;
+      }
+    }
+
+    &-bottom{
+        width: 90%;
+        margin-top: 3rem;
+    }
+  }
+
+ 
+}
+
+//*---------------------------------RESPONSIVE--------------------------------------
